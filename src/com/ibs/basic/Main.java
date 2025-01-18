@@ -73,5 +73,80 @@ public class Main {
 //      2. В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции.
         System.out.println("num1 " + symbol + " num2 = " + operation);
 //      task_6
+//      Напишите программу конвертер физических величин:
+//      1. Пользователю предлагается на выбор ввести массу или расстояние:
+        int choice, measureChoice = 0;
+        double amount;
+        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
+        while (true) {
+            choice = sc.nextInt();
+            if (choice == 1 || choice == 2) break;
+            else System.out.println("Введите 1 или 2");
+        }
+//      2. Пользователю предлагается выбрать единицу измерения.
+        switch (choice) {
+            case 1:
+                System.out.println("Выберите единицу измерения: 1 - килограммы; 2 - фунты;");
+                while (true) {
+                    measureChoice = sc.nextInt();
+                    if (measureChoice == 1 || measureChoice == 2) break;
+                    else System.out.println("Введите 1, 2 или 3");
+                }
+                break;
+            case 2:
+                System.out.println("Выберите единицу измерения: 1 - метры; 2- мили; 3 - ярды; 4- футы");
+                while (true) {
+                    measureChoice = sc.nextInt();
+                    if (measureChoice == 1 || measureChoice == 2 || measureChoice == 3 || measureChoice == 4) break;
+                    else System.out.println("Введите 1, 2, 3 или 4");
+                }
+                break;
+        }
+//      3. Пользователю предлагается ввести количество выбранных единиц:
+        System.out.println("Введите количество:");
+        amount = sc.nextDouble();
+        System.out.println("Результат: ");
+        switch (choice) {
+            case 1:
+                switch (measureChoice) {
+                    case 1:
+                        System.out.println("Килограммов: " + amount);
+                        System.out.println("Фунтов: " + amount * 2.20462);
+                        break;
+                    case 2:
+                        System.out.println("Фунтов: " + amount);
+                        System.out.println("Килограммов: " + amount / 2.20462);
+                        break;
+                }
+                break;
+            case 2:
+                switch (measureChoice) {
+                    case 1:
+                        System.out.println("Метров: " + amount);
+                        System.out.println("Миль: " + amount * 0.000621371);
+                        System.out.println("Ярдов: " + amount * 1.09361);
+                        System.out.println("Футов: " + amount * 3.28084);
+                        break;
+                    case 2:
+                        System.out.println("Метров: " + amount / 0.000621371);
+                        System.out.println("Миль: " + amount);
+                        System.out.println("Ярдов: " + amount * 1760);
+                        System.out.println("Футов: " + amount * 5280);
+                        break;
+                    case 3:
+                        System.out.println("Метров: " + amount * 0.9144);
+                        System.out.println("Миль: " + amount / 1760);
+                        System.out.println("Ярдов: " + amount);
+                        System.out.println("Футов: " + amount * 3);
+                        break;
+                    case 4:
+                        System.out.println("Метров: " + amount * 0.3048);
+                        System.out.println("Миль: " + amount / 5280);
+                        System.out.println("Ярдов: " + amount / 3);
+                        System.out.println("Футов: " + amount);
+                        break;
+                }
+                break;
+        }
     }
 }

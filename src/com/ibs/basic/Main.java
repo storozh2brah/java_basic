@@ -43,6 +43,35 @@ public class Main {
 //      4. Если полученное число больше 3, то вывести на экран сообщение "Программа выполнена корректно"
         if (roundedAverage > 3) System.out.println("Программа выполнена корректно");
 //      task_5
+//      1. Ввести 2 числа с клавиатуры, затем один из символов ‘+’, ‘-’, ‘*’ или ‘/’
+        double num1, num2, operation = 0;
+        char symbol;
+        System.out.println("Введите число 1: ");
+        num1 = sc.nextDouble();
+        System.out.println("Введите число 2: ");
+        num2 = sc.nextDouble();
+        while (true) {
+            System.out.println("Введите знак операции: ");
+            symbol = sc.next().charAt(0);
+            if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') break;
+            else System.out.println("Разрешены только: ‘+’, ‘-’, ‘*’ или ‘/’");
+        }
+        switch (symbol) {
+            case '+':
+                operation = num1 + num2;
+                break;
+            case '-':
+                operation = num1 - num2;
+                break;
+            case '*':
+                operation = num1 * num2;
+                break;
+            case '/':
+                operation = num1 / num2;
+                break;
+        }
+        System.out.println("Итог = " + operation);
+//      2. В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции.
 //      task_6
     }
 }

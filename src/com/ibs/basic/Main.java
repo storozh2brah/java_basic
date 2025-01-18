@@ -46,9 +46,9 @@ public class Main {
 //      1. Ввести 2 числа с клавиатуры, затем один из символов ‘+’, ‘-’, ‘*’ или ‘/’
         double num1, num2, operation = 0;
         char symbol;
-        System.out.println("Введите число 1: ");
+        System.out.println("Введите num1: ");
         num1 = sc.nextDouble();
-        System.out.println("Введите число 2: ");
+        System.out.println("Введите num2: ");
         num2 = sc.nextDouble();
         while (true) {
             System.out.println("Введите знак операции: ");
@@ -70,8 +70,8 @@ public class Main {
                 operation = num1 / num2;
                 break;
         }
-        System.out.println("Итог = " + operation);
 //      2. В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции.
+        System.out.println("num1 " + symbol + " num2 = " + operation);
 //      task_6
     }
 }

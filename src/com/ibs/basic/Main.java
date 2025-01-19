@@ -175,10 +175,34 @@ public class Main {
         System.out.println("Введите целое число N: ");
         n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
-            if(i % 2 != 0) {
+            if (i % 2 != 0) {
                 sum += i;
             }
         }
         System.out.println("Сумма чисел: " + sum);
+//      task_9
+//      1. Пользователь вводит размер массива и данные с клавиатуры в массив типа double.
+        int arraySize2;
+        System.out.println("Введите размер массива: ");
+        while (true) {
+            arraySize2 = sc.nextInt();
+            if (arraySize != 0) break;
+        }
+        double[] array2 = new double[arraySize2];
+        System.out.println("Заполните массив числами: ");
+        for (int i = 0; i < arraySize2; i++) {
+            array2[i] = sc.nextDouble();
+        }
+//      2. Посчитайте среднее арифметическое элементов массива.
+        double average2 = 0;
+        for (int i = 0; i < arraySize2; i++) {
+            average2 += array2[i];
+        }
+        average2 /= arraySize2;
+        System.out.println("Среднее арифметическое: " + average2);
+//      3. После этого произведите вывод массива на экран, где каждый элемент массива умножается на среднее арифметическое
+        for (int i = 0; i < arraySize2; i++) {
+            System.out.println("Элемент №" + (i + 1) + " * " + average2 + " = " + array2[i] * average2);
+        }
     }
 }

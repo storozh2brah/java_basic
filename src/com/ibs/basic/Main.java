@@ -6,6 +6,10 @@ import com.ibs.basic.task.*;
 
 import static com.ibs.basic.task.Task1.task1exec;
 import static com.ibs.basic.task.Task10.task10exec;
+import static com.ibs.basic.task.Task11.task11exec;
+import static com.ibs.basic.task.Task12.task12exec;
+import static com.ibs.basic.task.Task13.task13exec;
+import static com.ibs.basic.task.Task14.task14exec;
 import static com.ibs.basic.task.Task2.task2exec;
 import static com.ibs.basic.task.Task3.task3exec;
 import static com.ibs.basic.task.Task4.task4exec;
@@ -20,12 +24,16 @@ public class Main {
 //        task1exec();
 //        task2exec();
 //        task3exec();
-        task4exec();
+//        task4exec();
 //        task5exec();
 //        task6exec();
 //        task7exec();
 //        task8exec();
 //        task9exec();
 //        task10exec();
+        task11exec();
+        task12exec();
+        task13exec();
+        task14exec();
     }
 }

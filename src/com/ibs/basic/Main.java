@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import com.ibs.basic.task.*;
 
+import static com.ibs.basic.task.FinalTask1.finalTask1exec;
+import static com.ibs.basic.task.FinalTask2.finalTask2exec;
+import static com.ibs.basic.task.FinalTask3.finalTask3exec;
+import static com.ibs.basic.task.FinalTask4.finalTask4exec;
 import static com.ibs.basic.task.Task1.task1exec;
 import static com.ibs.basic.task.Task10.task10exec;
 import static com.ibs.basic.task.Task11.task11exec;
@@ -31,9 +35,13 @@ public class Main {
 //        task8exec();
 //        task9exec();
 //        task10exec();
-        task11exec();
-        task12exec();
-        task13exec();
-        task14exec();
+//        task11exec();
+//        task12exec();
+//        task13exec();
+//        task14exec();
+        finalTask1exec();
+        finalTask2exec();
+        finalTask3exec();
+        finalTask4exec();
     }
 }
